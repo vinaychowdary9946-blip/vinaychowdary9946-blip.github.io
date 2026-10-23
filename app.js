@@ -3,6 +3,7 @@
   const root = document.documentElement;
   const toggle = document.getElementById('theme-toggle');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const navLinks = [...document.querySelectorAll('.nav-links a')];
   const applyTheme = theme => {
     root.dataset.theme = theme;
     toggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
@@ -26,7 +27,6 @@
       });
     }, { threshold: 0.12 });
     document.querySelectorAll('[data-reveal]').forEach(el => reveal.observe(el));
-    const navLinks = [...document.querySelectorAll('.nav-links a')];
     const sections = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -44,6 +44,7 @@
   const update = () => {
     const total = root.scrollHeight - window.innerHeight;
     progress.style.width = Math.max(0, Math.min(100, total > 0 ? window.scrollY / total * 100 : 0)) + '%';
+    if (window.scrollY < 180) navLinks.forEach(link => { link.classList.remove('active'); link.removeAttribute('aria-current'); });
     scheduled = false;
   };
   window.addEventListener('scroll', () => { if (!scheduled) { scheduled = true; requestAnimationFrame(update); } }, { passive: true });
