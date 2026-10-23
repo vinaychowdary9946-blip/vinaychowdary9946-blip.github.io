@@ -1,0 +1,1 @@
+try { const theme = localStorage.getItem('vinay-theme'); if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme; } catch (_) { /* Default dark theme remains usable. */ }

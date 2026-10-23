@@ -17,3 +17,9 @@ Education, existing academic projects and contact details come from the supplied
 ## Publish
 
 GitHub Pages: Settings → Pages → Deploy from a branch → main → / (root). The `.nojekyll` file disables Jekyll processing. The resume PDF is included unchanged. MIT license applies to code; resume personal content remains the owner's material.
+
+## Visual design
+
+An editorial dark theme with a lavender accent, optional warm light theme, self-hosted subset fonts, native SVG system artwork, illustrated project cards, and scroll/hover transitions. The theme choice is stored locally when browser storage is available. Navigation and content work without JavaScript. `prefers-reduced-motion` disables animated transitions and continuous artwork motion.
+
+Font files are subsets of DejaVu Sans and DejaVu Serif, served locally without a third-party font request. Their license is included in `assets/fonts/LICENSE.txt`. The code MIT license does not replace the font license.
