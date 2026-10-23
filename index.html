@@ -8,7 +8,7 @@
   <title>Vinay Muppalla — Code with intention.</title>
   <link rel="preload" href="assets/fonts/studio-sans.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/studio-sans-bold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="research/research.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -17,7 +17,7 @@
 <header class="site-header">
   <nav aria-label="Main" class="nav shell">
     <a href="#home" class="wordmark" aria-label="Vinay Muppalla home"><span class="brand-mark">v<span>m</span></span><span class="wordmark-name">VINAY<br>MUPPALLA</span></a>
-    <div class="nav-links"><a href="#work">Work<span>03</span></a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <div class="nav-links"><a href="#work">Work<span>03</span></a><a href="research/">For professors</a><a href="#about">About</a><a href="#contact">Contact</a></div>
     <div class="nav-actions"><button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2 2m11.6 11.6 2 2m0-15.6-2 2M6.2 17.8l-2 2"/></svg></button><a class="nav-resume" href="Vinay_Muppalla_Resume.pdf">Resume <span>↗</span></a></div>
   </nav>
 </header>
@@ -25,7 +25,7 @@
 <section class="hero shell" id="home">
   <div class="hero-top"><span class="micro"><i class="status-dot"></i> SOFTWARE ENGINEERING</span><span class="micro hero-index">PORTFOLIO / 2026</span></div>
   <div class="hero-layout">
-    <div class="hero-copy"><h1>Careful code.<br><em>Bold ideas.</em><span class="headline-dot">✳</span></h1><p class="hero-description">I’m Vinay. I turn complex problems into clear, reliable software—and test what happens when things break.</p><div class="hero-cta"><a class="button primary" href="#work">Discover my work <span class="button-icon">↘</span></a><a class="text-link" href="#about">A little about me <span>↗</span></a></div></div>
+    <div class="hero-copy"><h1>Careful code.<br><em>Bold ideas.</em><span class="headline-dot">✳</span></h1><p class="hero-description">I’m Vinay. I turn complex problems into clear, reliable software—and test what happens when things break.</p><div class="hero-cta"><a class="button primary" href="#work">Discover my work <span class="button-icon">↘</span></a><a class="text-link" href="research/">Research & professors <span>↗</span></a></div></div>
     <div class="system-art" aria-label="Abstract illustration of connected software components">
       <div class="art-caption micro"><span>SYSTEM STUDY — 01</span><span class="art-status"><i></i> CONNECTED</span></div>
       <svg class="orbit-art" viewBox="0 0 480 420" aria-hidden="true"><defs><linearGradient id="orbitGradient" x1="0" x2="1"><stop stop-color="#b9a2f5"/><stop offset="1" stop-color="#f1b774"/></linearGradient><radialGradient id="coreGlow"><stop stop-color="#b9a2f5" stop-opacity=".22"/><stop offset="1" stop-color="#b9a2f5" stop-opacity="0"/></radialGradient></defs><circle cx="240" cy="210" r="180" fill="url(#coreGlow)"/><g class="orbit-lines" fill="none"><ellipse cx="240" cy="210" rx="190" ry="76" transform="rotate(-32 240 210)"/><ellipse cx="240" cy="210" rx="190" ry="76" transform="rotate(32 240 210)"/><ellipse cx="240" cy="210" rx="76" ry="190"/></g><g class="orbit-ring" fill="none" stroke="url(#orbitGradient)"><circle cx="240" cy="210" r="132" stroke-dasharray="1 13"/></g><path class="core-outline" d="M240 138 302 174v72l-62 36-62-36v-72z"/><path class="core-inner" d="m240 160 43 25v50l-43 25-43-25v-50z"/><path class="core-symbol" d="m218 204 14 14 29-30"/><g class="nodes"><circle cx="86" cy="111" r="7"/><circle cx="394" cy="309" r="7"/><circle cx="240" cy="20" r="5"/><circle cx="240" cy="400" r="5"/></g><g class="art-labels"><text x="32" y="89">BUILD</text><text x="370" y="340">RECOVER</text><text x="258" y="32">TEST</text></g></svg>
@@ -43,6 +43,7 @@
     <div class="experiment-card"><div class="experiment-heading"><span class="micro">RECOVERY REPORT</span><span class="tiny-badge">MEASURED</span></div><div class="experiment-metric"><strong>400<span>↗</span></strong><p>real worker process exits<br>across eight controlled scenarios</p></div><div class="comparison"><div class="comparison-label"><span>Duplicate reports / 50-job scenario</span><span>LOWER IS BETTER</span></div><div class="compare-row"><span>Unprotected</span><div class="compare-track"><div class="compare-fill unsafe"></div></div><b>50</b></div><div class="compare-row"><span>Protected</span><div class="compare-track"><div class="compare-fill safe"></div></div><b>0</b></div></div><div class="experiment-foot"><span><i class="status-dot"></i> 0 missing reports</span><span>Raw evidence included ↗</span></div></div>
   </div><p class="scope-note">Synthetic workload · One SQLite database · Process-crash recovery · Browser replay reconstructs the recorded experiment</p>
 </section>
+<section class="shell research-page-teaser" aria-labelledby="research-teaser-title"><div><span class="micro">INDEPENDENT RESEARCH / FOR PROFESSORS & HIRING TEAMS</span><h2 id="research-teaser-title">Beyond working software.<br><em>Evidence you can question.</em></h2><p>Effect Boundary Lab examines retry safety when an external service forgets a request. Explore real crash experiments, unresolved outcomes, and a reproducible technical report.</p></div><div class="feature-links"><a class="button primary" href="research/">For professors <span>↗</span></a><a class="text-link" href="research/?view=hiring">For hiring teams ↗</a></div></section>
 <section class="section shell" id="work">
   <div class="section-label"><span class="micro">02 / SELECTED WORK</span><span class="micro muted">IDEAS, IMPLEMENTED.</span></div>
   <div class="section-heading"><h2>Less talk.<br><em>More working software.</em></h2><p>Three independent projects.<br>Open demos, documented decisions,<br>and code you can explore.</p></div>

@@ -3,7 +3,7 @@
   const root = document.documentElement;
   const toggle = document.getElementById('theme-toggle');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const navLinks = [...document.querySelectorAll('.nav-links a')];
+  const navLinks = [...document.querySelectorAll('.nav-links a')].filter(link => link.getAttribute('href').startsWith('#'));
   const applyTheme = theme => {
     root.dataset.theme = theme;
     toggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);

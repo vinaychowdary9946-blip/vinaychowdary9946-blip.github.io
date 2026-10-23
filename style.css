@@ -9,3 +9,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reading-progress{display:none}}
 
 @media(max-width:580px){.nav-links a{padding-block:10px}.theme-toggle{min-width:28px;min-height:32px}.nav-resume{padding-block:10px}.project-links a{padding-block:6px}}
+
+@media(max-width:580px){.nav-links{gap:12px;margin-left:0}.nav-links a{font-size:9px}.nav-links a[href="#contact"]{display:none}}
